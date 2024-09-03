@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "../components/CustomArrows";
+import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
 import Activityslider from "../components/Activityslider";
+import Travel from "../assets/travel.png";
 
 import Garden from "../assets/garden.jpeg";
 import Garden1 from "../assets/garden1.jpeg";
@@ -379,10 +381,38 @@ function Home() {
             <p className="font-bold mt-4">EMAIL:</p>
             <p>reservations@peonygardens.co.ke</p>
           </div>
+          </div>
+          </div>
+ {/* Footer Section */}
+ <div className="relative z-20 mt-12 bg-gray-50 py-8">
+        <div className="flex justify-center items-center space-x-4 mb-2">
+          {/* Social Media Icons */}
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="text-3xl text-gray-800 hover:text-black" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-3xl text-gray-800 hover:text-pink-700" />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-3xl text-gray-800 hover:text-blue-500" />
+          </a>
+          <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+            <FaWhatsappSquare className="text-3xl text-gray-800 hover:text-green-600" />
+          </a>
+        </div>
+        <div className="text-center">
+          <p className="text-lg font-semibold">#PeonyGardensHotel</p>
+        </div>
+        <div className="flex justify-center my-4">
+          <img src={Travel} alt="Travel Wishlist Logo" className="h-20 w-20" />
+        </div>
+        <div className="bg-gray-800 text-center text-white py-2">
+          <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
         </div>
       </div>
     </div>
   );
-}
-
-export default Home;
+}export default Home;
