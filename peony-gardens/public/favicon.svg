@@ -1,0 +1,8 @@
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="display: block; width: 1.9rem; height: 1.9rem; background-color: black;">
+    <text x="30" y="80" font-size="95" font-family="Arial" fill="white" style="fill: white;">P.G</text>
+</svg> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="display: block; width: 1.9rem; height: 1.9rem; background-color: black;">
+    <image href="./Logo.png" x="0" y="0" height="100" width="100" />
+</svg>
