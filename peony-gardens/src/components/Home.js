@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "../components/CustomArrows";
+import Activityslider from "../components/Activityslider";
 
 import Garden from "../assets/garden.jpeg";
 import Garden1 from "../assets/garden1.jpeg";
@@ -42,43 +43,58 @@ function Home() {
     <div id="home" className="relative min-h-screen">
       {/* Container for Slider and Reservation */}
       <div className="relative w-full h-screen">
-        <Slider {...settings} className="absolute inset-0 z-0">
-          <div>
-            <img
-              src={Garden}
-              alt="Garden"
-              className="w-full h-screen object-cover"
-            />
-          </div>
-          <div>
-            <img
-              src={Garden1}
-              alt="Garden1"
-              className="w-full h-screen object-cover"
-            />
-          </div>
-          <div>
-            <img
-              src={Garden2}
-              alt="Garden2"
-              className="w-full h-screen object-cover"
-            />
-          </div>
-          <div>
-            <img
-              src={Garden3}
-              alt="Garden3"
-              className="w-full h-screen object-cover"
-            />
-          </div>
-          <div>
-            <img
-              src={Garden4}
-              alt="Garden4"
-              className="w-full h-screen object-cover"
-            />
-          </div>
-        </Slider>
+  <Slider {...settings} className="absolute inset-0 z-0">
+    <div className="relative">
+      <img
+        src={Garden}
+        alt="Garden"
+        className="w-full h-screen object-cover"
+      />
+      <p className="absolute inset-0 flex items-center justify-center text-orange-700 text-4xl font-bold">
+        Swimming Pool
+      </p>
+    </div>
+    <div className="relative">
+      <img
+        src={Garden1}
+        alt="Garden1"
+        className="w-full h-screen object-cover"
+      />
+      <p className="absolute inset-0 flex items-center justify-center text-slate-300 text-4xl font-bold">
+      Relaxing Area
+      </p>
+    </div>
+    <div className="relative">
+      <img
+        src={Garden2}
+        alt="Garden2"
+        className="w-full h-screen object-cover"
+      />
+      <p className="absolute inset-0 flex items-center justify-center text-orange-700 text-4xl font-bold">
+        Garden Area 2
+      </p>
+    </div>
+    <div className="relative">
+      <img
+        src={Garden3}
+        alt="Garden3"
+        className="w-full h-screen object-cover"
+      />
+      <p className="absolute inset-0 flex items-center justify-center text-orange-100 text-4xl font-bold">
+        Garden Area 3
+      </p>
+    </div>
+    <div className="relative">
+      <img
+        src={Garden4}
+        alt="Garden4"
+        className="w-full h-screen object-cover"
+      />
+      <p className="absolute inset-0 flex items-center justify-center text-orange-500  text-4xl font-bold">
+        Photo Area
+      </p>
+    </div>
+  </Slider>
 
         {/* Reservation Form at the Bottom */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30 bg-white bg-opacity-45 p-5 rounded-t-lg shadow-md w-full max-w-4xl">
@@ -178,7 +194,7 @@ function Home() {
       </div>
 
       {/* Accommodation Section */}
-      <div className="relative z-20 mt-12 p-6 bg-white shadow-lg rounded-lg max-w-4xl mx-auto text-center">
+      <div className="relative p-5 z-20 mt-9 bg-yellow-700 bg-opacity-55 max-h-[1000px] max-w-8xl mx-auto rounded-lg text-center">
         <h2 className="text-2xl font-semibold">ACCOMMODATIONS</h2>
         <h3 className="text-3xl font-bold mb-2">
           Welcome to Peony Gardens Hotel
@@ -299,28 +315,46 @@ function Home() {
       </div>
 
       {/* Activities Section */}
-      <div className="relative z-20 mt-12 bg-white py-8">
+      <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-8">
         <div className="text-center mb-6">
-          <h2 className="text-2xl font-semibold">ACTIVITIES</h2>
-          <p className="text-gray-600">
+          <h2 className="text-4xl font-bold mb-10">ACTIVITIES</h2>
+          <p className="text-1xl font-semibold text-gray-900">
             Discover exciting activities to enjoy during your stay.
           </p>
+          <div className="w-4/5 p-4 mx-auto text-center">
+  <p className="text-gray-900">
+    Get away to get closer. Peony Gardens provides the perfect atmosphere for bonding and reflection, whether you are alone, a group, a couple or a family. We offer an incredible array of activities ranging from the swimming pool, quad bikes, archery, high ropes, cargo nets, bonfires, etc.
+  </p>
+</div>
+<div className="w-4/5 p-4 mx-auto text-center">
+  <p className="text-gray-900">
+    For the Great Outdoors, get to explore the beautiful space via bike riding. For the sports enthusiasts, we offer on-site Football, Volleyball, and Basketball. You can also choose to enjoy the scenery, read a book, or wind down with the board games available.
+  </p>
+</div>
+
         </div>
         <div className="flex justify-between items-center px-4">
+          <Activityslider />
+          </div>
+          </div>
           {/* Activities Slider */}
-          <button className="bg-gray-200 rounded-full p-2">{"<"}</button>
+          {/* <button className="bg-gray-200 rounded-full p-2">{"<"}</button>
           <div className="w-full p-4">
             <p className="text-gray-700">
-              Get away to get closer. The Last Village provides the perfect
-              atmosphere for bonding and reflection...
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
+          </div>
+          <div className="w-full p-4">
+            <p className="text-gray-700">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
           </div>
           <button className="bg-gray-200 rounded-full p-2">{">"}</button>
         </div>
-      </div>
+      </div> */}
 
       {/* Location Section */}
-      <div className="relative z-20 mt-12 bg-gray-100 py-8">
+      <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-8">
         <div className="text-center mb-6">
           <h2 className="text-2xl font-semibold">WHERE TO FIND US</h2>
           <p className="text-gray-600">
