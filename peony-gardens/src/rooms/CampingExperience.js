@@ -11,7 +11,6 @@ function CampingExperience() {
         Experience the great outdoors with our Camping Experience at Peony Gardens. Surrounded by nature, our camping sites offer a unique and adventurous way to enjoy your stay.
       </p>
       
-      {/* First two images displayed side by side */}
       <div className="flex flex-row gap-4 mb-6 justify-center">
         <div className="w-full md:w-1/2">
           <img
