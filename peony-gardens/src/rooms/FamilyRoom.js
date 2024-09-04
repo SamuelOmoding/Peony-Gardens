@@ -1,10 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Family from '../assets/family5.jpeg';
 import family1 from '../assets/family1.jpeg';
 import family2 from '../assets/family2.jpeg';
 import family3 from '../assets/family3.jpeg';
 
 function FamilyRoom() {
+  const navigate = useNavigate();
+
+  const handleViewRates = () => {
+    navigate('/rates');
+  };
+
   return (
     <div className="relative p-5 z-20 mt-9 bg-yellow-700 bg-opacity-55 max-w-7xl mx-auto rounded-lg text-center">
       <h1 className="text-3xl font-bold text-center mb-4">Family Room</h1>
@@ -61,6 +68,12 @@ function FamilyRoom() {
       <p className="text-lg text-gray-700 mb-6">
         To make a reservation, please contact us at reservations@peonygardens.co.ke or call us at +254 700 949 004.
       </p>
+      <button
+        onClick={handleViewRates}
+        className="mt-6 bg-orange-600 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
+      >
+        View / Download Rates
+      </button>
     </div>
   );
 }
