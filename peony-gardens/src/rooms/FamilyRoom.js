@@ -1,19 +1,49 @@
 import React from 'react';
+import Family from '../assets/family5.jpeg';
+import family1 from '../assets/family1.jpeg';
+import family2 from '../assets/family2.jpeg';
+import family3 from '../assets/family3.jpeg';
 
 function FamilyRoom() {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
+    <div className="relative p-5 z-20 mt-9 bg-yellow-700 bg-opacity-55 max-w-7xl mx-auto rounded-lg text-center">
       <h1 className="text-3xl font-bold text-center mb-4">Family Room</h1>
       <p className="text-lg text-gray-700 mb-6">
         The Family Room at Peony Gardens Hotel is perfect for families or groups looking for spacious accommodations. This room features multiple beds and all the amenities needed for a comfortable stay.
       </p>
-      <div className="mb-6">
-        <img
-          src="https://thelastvillage.co.ke/wp-content/uploads/2020/09/family-room.jpg"
-          alt="Family Room"
-          className="w-full h-auto rounded shadow-lg"
-        />
+      <div className="flex flex-wrap gap-4 mb-6 justify-center">
+        <div className="w-1/2 max-w-sm">
+          <img
+            src={Family}
+            alt="Family Room"
+            className="w-full h-auto rounded shadow-lg"
+          />
+        </div>
+        <div className="w-1/2 max-w-sm">
+          <img
+            src={family2}
+            alt="Family Room"
+            className="w-full h-auto rounded shadow-lg"
+          />
+        </div>
       </div>
+      <div className="flex flex-wrap gap-4 mb-6 justify-center">
+        <div className="w-1/2 max-w-sm">
+          <img
+            src={family1}
+            alt="Family Room"
+            className="w-full h-auto rounded shadow-lg"
+          />
+        </div>
+        <div className="w-1/2 max-w-sm">
+          <img
+            src={family3}
+            alt="Family Room"
+            className="w-full h-auto rounded shadow-lg"
+          />
+        </div>
+      </div>
+     
       <h2 className="text-2xl font-bold mb-4">Room Features</h2>
       <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
         <li>Multiple beds</li>

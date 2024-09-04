@@ -12,7 +12,6 @@ function TwinTripleRoom() {
         The Twin/Triple Room at Peony Gardens Hotel is designed for flexibility and comfort, accommodating up to three guests with twin or triple beds. It’s perfect for families, friends, or small groups traveling together.
       </p>
       <div className="flex flex-wrap gap-4 mb-6 justify-center">
-        {/* Display first two images side by side */}
         <div className="w-1/2 max-w-sm">
           <img
             src={Twin}
@@ -28,7 +27,6 @@ function TwinTripleRoom() {
           />
         </div>
       </div>
-      {/* Display remaining images in a new row */}
       <div className="flex flex-wrap gap-4 mb-6 justify-center">
         <div className="w-1/2 max-w-sm">
           <img
