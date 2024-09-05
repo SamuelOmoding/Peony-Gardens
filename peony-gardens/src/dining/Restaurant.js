@@ -1,27 +1,31 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
-import Team from "../assets/Team.jpeg";
 import Travel from "../assets/travel.jpeg";
+import Team from "../assets/Team.jpeg";
 import Team1 from '../assets/Team1.jpeg';
 import Team2 from '../assets/Team2.jpeg';
 import Team3 from '../assets/Team3.jpeg';
 
-function TeamBuilding() {
+function Restaurant() {
   return (
     <div className="relative">
       <img
         src={Team}
-        alt="Team Building"
+        alt="Restaurant"
         className="w-full h-screen object-cover"
       />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-semibold text-center px-6 ">
-        <h1 className="text-4xl font-bold mb-4">Team Building</h1>
+        <h1 className="text-4xl font-bold mb-4">Restaurant</h1>
         <p className="text-lg mb-2 bg-gray-900 bg-opacity-55">
-          Peony Gardens Conference Facilities give your business an ideal setup for a truly beneficial meeting, conference, or training. Peony Gardens is located in a huge, beautiful hilly compound with natural attractions and equipped with world-class facilities and service.
+        The swahili themed restaurant comes complete with true makuti & swahili wall finishing. We start your day on a good note from either the buffet setup or an ala carte service. Breakfast will definitely impress you; it ranges from eggs, yoghurt, meat, cereals, fresh fruits and much more.
         <br />
         <br />
-        No matter the size of your meeting, Peony Gardens makes a perfect, custom package for you.
+        Our well skilled chefs prepare delightful culinary that will match your taste buds and is flexible to transform dishes to suit your preferences.
+        <br />
+        <br />
+        <p className="text-lg">
+        With the beautiful gardens and birds chirping just outside the restaurant, we are never suprised when you’ll prefer to dine from the garden restaurant while enjoying the soothing breeze of fresh air and breathtaking sights as you get served with mouth-watering meals.        </p>
         </p>
       </div>
 
@@ -71,4 +75,4 @@ function TeamBuilding() {
   );
 }
 
-export default TeamBuilding;
+export default Restaurant;

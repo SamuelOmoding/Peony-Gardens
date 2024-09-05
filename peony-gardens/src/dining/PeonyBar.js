@@ -1,27 +1,24 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
-import Team from "../assets/Team.jpeg";
 import Travel from "../assets/travel.jpeg";
+import Team from "../assets/Team.jpeg";
 import Team1 from '../assets/Team1.jpeg';
 import Team2 from '../assets/Team2.jpeg';
 import Team3 from '../assets/Team3.jpeg';
 
-function TeamBuilding() {
+function PeonyBar() {
   return (
     <div className="relative">
       <img
         src={Team}
-        alt="Team Building"
+        alt="Peony Bar"
         className="w-full h-screen object-cover"
       />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-semibold text-center px-6 ">
-        <h1 className="text-4xl font-bold mb-4">Team Building</h1>
+        <h1 className="text-4xl font-bold mb-4">Peony Bar</h1>
         <p className="text-lg mb-2 bg-gray-900 bg-opacity-55">
-          Peony Gardens Conference Facilities give your business an ideal setup for a truly beneficial meeting, conference, or training. Peony Gardens is located in a huge, beautiful hilly compound with natural attractions and equipped with world-class facilities and service.
-        <br />
-        <br />
-        No matter the size of your meeting, Peony Gardens makes a perfect, custom package for you.
+        Our bar is thoughtfully placed on the first floor to make sure you don’t miss the sunset as you take your sips from one of our premium liquors and local drinks. Don’t also miss to try out our signature cocktails creatively mixed to give you the best feeling ever from our highly skilled mixologists.        <br />
         </p>
       </div>
 
@@ -71,4 +68,4 @@ function TeamBuilding() {
   );
 }
 
-export default TeamBuilding;
+export default PeonyBar;

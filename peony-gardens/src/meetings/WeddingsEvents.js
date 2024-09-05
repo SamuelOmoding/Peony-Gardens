@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
+import Travel from "../assets/travel.png";
 import Wed1 from '../assets/wed1.jpeg';
 import Wed2 from '../assets/wed2.jpeg';
 import Wed3 from '../assets/wed3.jpeg';
@@ -60,7 +61,7 @@ function WeddingsEvents() {
           <p className="text-lg font-semibold">#PeonyGardensHotel</p>
         </div>
         <div className="flex justify-center my-4">
-          <img src={Wed4} alt="Travel Wishlist Logo" className="h-20 w-20" />
+          <img src={Travel} alt="Travel Wishlist Logo" className="h-20 w-20" />
         </div>
         <div className="bg-gray-800 text-center text-white py-2">
           <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
