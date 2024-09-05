@@ -1,40 +1,46 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
-import Travel from "../assets/travel.jpeg";
-import Team from "../assets/Team.jpeg";
-import Team1 from '../assets/Team1.jpeg';
-import Team2 from '../assets/Team2.jpeg';
-import Team3 from '../assets/Team3.jpeg';
+import DrinkMenu1 from '../assets/DrinkMenu1.png'; // Update with actual paths to your images
+import DrinkMenu2 from '../assets/DrinkMenu2.png';
+import DrinkMenu3 from '../assets/DrinkMenu3.png';
+import DrinkMenu4 from '../assets/DrinkMenu4.png';
+import DrinkMenu5 from '../assets/DrinkMenu5.png';
+import DrinkMenu6 from '../assets/DrinkMenu6.png';
+import DrinkMenuPDF from '../assets/DrinkMenu.pdf'; // Path to your PDF file
 
-function PeonyBar() {
+function DrinkMenu() {
   return (
     <div className="relative">
-      <img
-        src={Team}
-        alt="Peony Bar"
-        className="w-full h-screen object-cover"
-      />
-
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-semibold text-center px-6 ">
-        <h1 className="text-4xl font-bold mb-4">Peony Bar</h1>
-        <p className="text-lg mb-2 bg-gray-900 bg-opacity-55">
-        Our bar is thoughtfully placed on the first floor to make sure you don’t miss the sunset as you take your sips from one of our premium liquors and local drinks. Don’t also miss to try out our signature cocktails creatively mixed to give you the best feeling ever from our highly skilled mixologists.        <br />
-        </p>
-      </div>
-
-      <div className="bg-white p-2 mt-8 mx-4 rounded-lg shadow-lg">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-          {[Team1, Team2, Team3].map((src, index) => (
+      {/* Gallery Section */}
+      <div className="bg-white p-4 mt-8 mx-4 rounded-lg shadow-lg">
+        <h1 className="text-3xl font-bold mb-4 text-center">Drink Menu</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {[DrinkMenu1, DrinkMenu2, DrinkMenu3, DrinkMenu4, DrinkMenu5, DrinkMenu6].map((src, index) => (
             <img 
               key={index}
               src={src} 
-              alt={`Conference ${index + 1}`} 
-              className="rounded-lg w-full h-56 object-cover" 
+              alt={`Drink Menu Page ${index + 1}`} 
+              className="rounded-lg w-full h-auto object-cover" 
             />
           ))}
         </div>
       </div>
 
+      {/* Download Section */}
+      <div className="bg-white p-4 mt-8 mx-4 rounded-lg shadow-lg">
+        <div className="flex items-center justify-between p-4 border-b">
+          <div className="flex items-center space-x-4">
+            <img src="pdf-icon.png" alt="PDF Icon" className="w-8 h-8" />
+            <div>
+              <h3 className="text-lg font-semibold">DRINKS MENU</h3>
+              <p className="text-sm text-gray-600">1 file(s), 7.82 MB</p>
+            </div>
+          </div>
+          <a href={DrinkMenuPDF} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Download</a>
+        </div>
+      </div>
+
+      {/* Footer Section */}
       <div className="relative z-20 mt-12 bg-gray-50 py-8">
         <div className="flex justify-center items-center space-x-4 mb-2">
           {/* Social Media Icons */}
@@ -58,7 +64,7 @@ function PeonyBar() {
           <p className="text-lg font-semibold">#PeonyGardensHotel</p>
         </div>
         <div className="flex justify-center my-4">
-          <img src={Travel} alt="Travel Wishlist Logo" className="h-20 w-20" />
+          <img src={DrinkMenuPDF} alt="Travel Wishlist Logo" className="h-20 w-20" />
         </div>
         <div className="bg-gray-800 text-center text-white py-2">
           <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
@@ -68,7 +74,4 @@ function PeonyBar() {
   );
 }
 
-export default PeonyBar;
-
-
-
+export default DrinkMenu;
