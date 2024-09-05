@@ -15,6 +15,9 @@ import FamilyRoom from './rooms/FamilyRoom';
 import HoneymoonRoom from './rooms/HoneymoonRoom'; 
 import CampingExperience from './rooms/CampingExperience'; 
 import Rates from './rooms/Rates'; 
+import MeetingsConferences from './meetings/MeetingsConferences';
+import WeddingsEvents from './meetings/WeddingsEvents';
+import TeamBuilding from './meetings/TeamBuilding';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           <Route path="/accommodation/honeymoon-room" element={<HoneymoonRoom />} /> 
           <Route path="/accommodation/camping-experience" element={<CampingExperience />} /> 
           <Route path="/meetings-events" element={<MeetingsEvents />} />
+          <Route path="/meetings-events/meetings-conferences" element={<MeetingsConferences />} />
+          <Route path="/meetings-events/weddings-events" element={<WeddingsEvents />} />
+          <Route path="/meetings-events/team-building" element={<TeamBuilding />} />
           <Route path="/dining-wining" element={<DiningWining />} />
           <Route path="/deals-offers" element={<DealsOffers />} />
           <Route path="/experience-activities" element={<ExperienceActivities />} />

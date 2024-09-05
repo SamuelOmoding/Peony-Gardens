@@ -46,35 +46,35 @@ function Home() {
       {/* Container for Slider and Reservation */}
       <div className="relative w-full h-screen">
   <Slider {...settings} className="absolute inset-0 z-0">
-    <div className="relative">
-      <img
-        src={Garden}
-        alt="Garden"
-        className="w-full h-screen object-cover"
-      />
-      <p className="absolute inset-0 flex items-center justify-center text-orange-700 text-4xl font-bold">
-        Swimming Pool
-      </p>
-    </div>
-    <div className="relative">
-      <img
-        src={Garden1}
-        alt="Garden1"
-        className="w-full h-screen object-cover"
-      />
-      <p className="absolute inset-0 flex items-center justify-center text-slate-300 text-4xl font-bold">
-      Relaxing Area
-      </p>
-    </div>
+  <div className="relative">
+  <img
+    src={Garden}
+    alt="Garden"
+    className="w-full h-screen object-cover"
+  />
+  <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+  Swimming Pool
+  </p>
+</div>
+<div className="relative">
+  <img
+    src={Garden1}
+    alt="Garden1"
+    className="w-full h-screen object-cover"
+  />
+  <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+  Relaxing Area
+  </p>
+</div>
     <div className="relative">
       <img
         src={Garden2}
         alt="Garden2"
         className="w-full h-screen object-cover"
       />
-      <p className="absolute inset-0 flex items-center justify-center text-orange-700 text-4xl font-bold">
-        Garden Area 2
-      </p>
+       <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+       Garden Area 2
+  </p>
     </div>
     <div className="relative">
       <img
@@ -82,9 +82,9 @@ function Home() {
         alt="Garden3"
         className="w-full h-screen object-cover"
       />
-      <p className="absolute inset-0 flex items-center justify-center text-orange-100 text-4xl font-bold">
-        Garden Area 3
-      </p>
+       <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+       Garden Area 3
+  </p>
     </div>
     <div className="relative">
       <img
@@ -92,9 +92,9 @@ function Home() {
         alt="Garden4"
         className="w-full h-screen object-cover"
       />
-      <p className="absolute inset-0 flex items-center justify-center text-orange-500  text-4xl font-bold">
-        Photo Area
-      </p>
+        <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+        Photo Area 
+  </p>
     </div>
   </Slider>
 
