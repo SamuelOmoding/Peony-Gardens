@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Honeymoon from '../assets/Honeymoon.jpeg';
+import Honeymoon from '../assets/HMN.jpeg';
 import Honeymoon3 from '../assets/HONEYMOON6.jpeg';
 import Honeymoon2 from '../assets/HONEYMOON2.jpeg';
 import Honeymoon1 from '../assets/HONEYMOON1.jpeg';
@@ -62,14 +62,13 @@ function HoneymoonRoom() {
         </div>
       </div>
       <h2 className="text-2xl font-bold mb-4">Room Features</h2>
-      <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
-        <li>Luxurious king-size bed</li>
+      <ul className="grid grid-cols-3 gap-4 text-lg text-gray-700 mb-6">        <li>Luxurious king-size bed</li>
         <li>Ensuite bathroom with hot shower and bathtub</li>
         <li>Private balcony with panoramic view</li>
         <li>Free Wi-Fi</li>
         <li>Flat-screen TV with satellite channels</li>
         <li>Complimentary champagne on arrival</li>
-        <li>Room service available</li>
+        <li>Room service (Upon Request)</li>
       </ul>
       <h2 className="text-2xl font-bold mb-4">Pricing</h2>
       <p className="text-lg text-gray-700 mb-6">

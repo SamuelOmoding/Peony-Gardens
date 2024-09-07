@@ -52,13 +52,13 @@ function FamilyRoom() {
       </div>
      
       <h2 className="text-2xl font-bold mb-4">Room Features</h2>
-      <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
-        <li>Multiple beds</li>
+      <ul className="grid grid-cols-3 gap-4 text-lg text-gray-700 mb-6">        <li>Comfortable double bed</li>
         <li>Ensuite bathroom with hot shower</li>
         <li>Private balcony with garden view</li>
         <li>Free Wi-Fi</li>
+        <li>Daily Housekeeping</li>
         <li>Flat-screen TV with satellite channels</li>
-        <li>Room service available</li>
+        <li>Room service (Upon Request)</li>
       </ul>
       <h2 className="text-2xl font-bold mb-4">Pricing</h2>
       <p className="text-lg text-gray-700 mb-6">
