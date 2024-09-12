@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Bikes from '../assets/biking.jpg';
 import Ropes from '../assets/highropes.jpeg';
 import Quadbike from '../assets/quadbike.jpg';
@@ -42,46 +42,32 @@ const ActivitySlider = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % activities.length);
-  };
+  // Automatically slide through activities
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % activities.length);
+    }, 3000); // Slides every 3 seconds
 
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + activities.length) % activities.length);
-  };
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, [activities.length]);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center p-4 bg-gray-50">
+    <div className="flex flex-col items-center p-4 bg-gray-50 shadow-lg rounded-md max-w-3xl mx-auto">
       {/* Activity Image */}
-      <div className="w-full md:w-1/2">
+      <div className="w-full">
         <img
           src={activities[currentIndex].image}
           alt={activities[currentIndex].title}
-          className="w-full h-64 md:h-96 object-cover rounded"
+          className="w-full h-56 md:h-80 object-cover rounded"
         />
       </div>
 
       {/* Activity Description */}
-      <div className="w-full md:w-1/2 p-6 bg-yellow-700 bg-opacity-55">
-        <h2 className="text-2xl font-bold mb-4">{activities[currentIndex].title}</h2>
-        <p className="text-gray-700 mb-6">
+      <div className="w-full p-4 bg-yellow-700 bg-opacity-90 text-white text-center rounded-b-md">
+        <h2 className="text-xl md:text-2xl font-bold mb-2">{activities[currentIndex].title}</h2>
+        <p className="text-sm md:text-base">
           {activities[currentIndex].description}
         </p>
-
-        <div className="flex justify-center space-x-4">
-          <button
-            className="bg-gray-200 rounded-full p-2"
-            onClick={handlePrevious}
-          >
-            {"<"}
-          </button>
-          <button
-            className="bg-gray-200 rounded-full p-2"
-            onClick={handleNext}
-          >
-            {">"}
-          </button>
-        </div>
       </div>
     </div>
   );
