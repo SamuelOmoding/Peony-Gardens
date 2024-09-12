@@ -188,7 +188,7 @@ const NavBar = () => {
         </li>
 
         <li className="text-md font-small text-yellow-600 hover:text-white hover:scale-105 transition duration-200 ease-in-out">
-          <NavLink to="/about" className={({ isActive }) => isActive ? "text-white" : "text-yellow-600"} end>
+          <NavLink to="/about-us" className={({ isActive }) => isActive ? "text-white" : "text-yellow-600"} end>
             ABOUT US
           </NavLink>
         </li>
