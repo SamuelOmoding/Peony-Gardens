@@ -115,9 +115,3 @@ function DealsOffers() {
 }
 
 export default DealsOffers;
-
-
-
-
-
-
