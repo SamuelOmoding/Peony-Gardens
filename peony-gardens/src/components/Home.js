@@ -3,7 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "../components/CustomArrows";
-import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
+import {
+  FaWhatsappSquare,
+  FaLinkedin,
+  FaFacebookSquare,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
 import Activityslider from "../components/Activityslider";
 import Travel from "../assets/travel.png";
 
@@ -45,58 +51,58 @@ function Home() {
     <div id="home" className="relative min-h-screen">
       {/* Container for Slider and Reservation */}
       <div className="relative w-full h-screen">
-  <Slider {...settings} className="absolute inset-0 z-0">
-  <div className="relative">
-  <img
-    src={Garden}
-    alt="Garden"
-    className="w-full h-screen object-cover"
-  />
-  <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
-  Swimming Pool
-  </p>
-</div>
-<div className="relative">
-  <img
-    src={Garden1}
-    alt="Garden1"
-    className="w-full h-screen object-cover"
-  />
-  <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
-  Relaxing Area
-  </p>
-</div>
-    <div className="relative">
-      <img
-        src={Garden2}
-        alt="Garden2"
-        className="w-full h-screen object-cover"
-      />
-       <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
-       Garden Area 2
-  </p>
-    </div>
-    <div className="relative">
-      <img
-        src={Garden3}
-        alt="Garden3"
-        className="w-full h-screen object-cover"
-      />
-       <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
-       Garden Area 3
-  </p>
-    </div>
-    <div className="relative">
-      <img
-        src={Garden4}
-        alt="Garden4"
-        className="w-full h-screen object-cover"
-      />
-        <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
-        Photo Area 
-  </p>
-    </div>
-  </Slider>
+        <Slider {...settings} className="absolute inset-0 z-0">
+          <div className="relative">
+            <img
+              src={Garden}
+              alt="Garden"
+              className="w-full h-screen object-cover"
+            />
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+              Swimming Pool
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src={Garden1}
+              alt="Garden1"
+              className="w-full h-screen object-cover"
+            />
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+              Relaxing Area
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src={Garden2}
+              alt="Garden2"
+              className="w-full h-screen object-cover"
+            />
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+              Garden Area 2
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src={Garden3}
+              alt="Garden3"
+              className="w-full h-screen object-cover"
+            />
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+              Garden Area 3
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src={Garden4}
+              alt="Garden4"
+              className="w-full h-screen object-cover"
+            />
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+              Photo Area
+            </p>
+          </div>
+        </Slider>
 
         {/* Reservation Form at the Bottom */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30 bg-white bg-opacity-45 p-5 rounded-t-lg shadow-md w-full max-w-4xl">
@@ -277,8 +283,8 @@ function Home() {
               </div>
             </div>
           </div>
-          {/* Amenities Section */}
-          <div className="text-center mt-10">
+
+          <div className="text-center mt-12">
             <h3 className="text-2xl font-bold mb-4">
               ALL OF OUR ROOMS OFFER THE FOLLOWING AMENITIES
             </h3>
@@ -314,33 +320,39 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Activities Section */}
-      <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-8">
-        <div className="text-center mb-6">
-          <h2 className="text-4xl font-bold mb-10">ACTIVITIES</h2>
-          <p className="text-1xl font-semibold text-gray-900">
-            Discover exciting activities to enjoy during your stay.
-          </p>
-          <div className="w-4/5 p-4 mx-auto text-center">
-  <p className="text-gray-900">
-    Get away to get closer. Peony Gardens provides the perfect atmosphere for bonding and reflection, whether you are alone, a group, a couple or a family. We offer an incredible array of activities ranging from the swimming pool, quad bikes, archery, high ropes, cargo nets, bonfires, etc.
-  </p>
-</div>
-<div className="w-4/5 p-4 mx-auto text-center">
-  <p className="text-gray-900">
-    For the Great Outdoors, get to explore the beautiful space via bike riding. For the sports enthusiasts, we offer on-site Football, Volleyball, and Basketball. You can also choose to enjoy the scenery, read a book, or wind down with the board games available.
-  </p>
-</div>
-
+        {/* Activities Section */}
+        <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-10">
+          <div className="text-center mb-6">
+            <h2 className="text-4xl font-bold mb-10">ACTIVITIES</h2>
+            <p className="text-1xl font-semibold text-gray-900">
+              Discover exciting activities to enjoy during your stay.
+            </p>
+            <div className="w-4/5 p-4 mx-auto text-center">
+              <p className="text-gray-900">
+                Get away to get closer. Peony Gardens provides the perfect
+                atmosphere for bonding and reflection, whether you are alone, a
+                group, a couple, or a family. We offer an incredible array of
+                activities ranging from the swimming pool, quad bikes, archery,
+                high ropes, cargo nets, bonfires, etc.
+              </p>
+            </div>
+            <div className="w-4/5 p-4 mx-auto text-center">
+              <p className="text-gray-900">
+                For the Great Outdoors, get to explore the beautiful space via
+                bike riding. For the sports enthusiasts, we offer on-site
+                Football, Volleyball, and Basketball. You can also choose to
+                enjoy the scenery, read a book, or wind down with the board
+                games available.
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-between items-center px-4">
+            <Activityslider />
+          </div>
         </div>
-        <div className="flex justify-between items-center px-4">
-          <Activityslider />
-          </div>
-          </div>
-          {/* Activities Slider */}
-          {/* <button className="bg-gray-200 rounded-full p-2">{"<"}</button>
+        {/* Activities Slider */}
+        {/* <button className="bg-gray-200 rounded-full p-2">{"<"}</button>
           <div className="w-full p-4">
             <p className="text-gray-700">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -355,63 +367,90 @@ function Home() {
         </div>
       </div> */}
 
-      {/* Location Section */}
-      <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-8">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl font-semibold">WHERE TO FIND US</h2>
-          <p className="text-gray-600">
-            Located in Mauko, Busia with mesmerizing views.
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-center space-y-6 lg:space-y-0 lg:space-x-6">
-          <div className="w-full lg:w-1/2 h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.0041656169783!2d34.12886790432812!3d0.4607691484282466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d96578011f5b1%3A0x122e58c84fb4a6e4!2sBusia%2C%20Kenya!5e0!3m2!1sen!2s!4v1693578336356!5m2!1sen!2s"
-              className="w-full h-full"
-              allowFullScreen
-              loading="lazy"
-              title="Peony Gardens Location"
-            ></iframe>
+        {/* Location Section */}
+        <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-8">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-semibold">WHERE TO FIND US</h2>
+            <p className="text-gray-600">
+              Located in Mauko, Busia with mesmerizing views.
+            </p>
           </div>
-          <div className="w-full lg:w-1/2 text-left px-6">
-            <p className="font-bold">ADDRESS:</p>
-            <p>Peony Gardens Hotel, Hospital Road, Mauko, Busia.</p>
-            <p className="font-bold mt-4">RESERVATION NO 1:</p>
-            <p>+254 700 949 004</p>
-            <p className="font-bold mt-4">EMAIL:</p>
-            <p>reservations@peonygardens.co.ke</p>
+          <div className="flex flex-col lg:flex-row justify-center space-y-6 lg:space-y-0 lg:space-x-6">
+            <div className="w-full lg:w-1/2 h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.0041656169783!2d34.12886790432812!3d0.4607691484282466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d96578011f5b1%3A0x122e58c84fb4a6e4!2sBusia%2C%20Kenya!5e0!3m2!1sen!2s!4v1693578336356!5m2!1sen!2s"
+                className="w-full h-full"
+                allowFullScreen
+                loading="lazy"
+                title="Peony Gardens Location"
+              ></iframe>
+            </div>
+            <div className="w-full lg:w-1/2 text-left px-6">
+              <p className="font-bold">ADDRESS:</p>
+              <p>Peony Gardens Hotel, Hospital Road, Mauko, Busia.</p>
+              <p className="font-bold mt-4">RESERVATION NO 1:</p>
+              <p>+254 700 949 004</p>
+              <p className="font-bold mt-4">EMAIL:</p>
+              <p>reservations@peonygardens.co.ke</p>
+            </div>
           </div>
+        </div>
+        {/* Footer Section */}
+        <div className="relative z-20 mt-12 bg-gray-50 py-8">
+          <div className="flex justify-center items-center space-x-4 mb-2">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="text-3xl text-gray-800 hover:text-black" />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-3xl text-gray-800 hover:text-pink-700" />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-3xl text-gray-800 hover:text-blue-500" />
+            </a>
+            <a
+              href="https://www.whatsapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsappSquare className="text-3xl text-gray-800 hover:text-green-600" />
+            </a>
           </div>
+          <div className="text-center">
+            <p className="text-lg font-semibold">#PeonyGardensHotel</p>
           </div>
- {/* Footer Section */}
- <div className="relative z-20 mt-12 bg-gray-50 py-8">
-        <div className="flex justify-center items-center space-x-4 mb-2">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
-          </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="text-3xl text-gray-800 hover:text-black" />
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-3xl text-gray-800 hover:text-pink-700" />
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-3xl text-gray-800 hover:text-blue-500" />
-          </a>
-          <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
-            <FaWhatsappSquare className="text-3xl text-gray-800 hover:text-green-600" />
-          </a>
-        </div>
-        <div className="text-center">
-          <p className="text-lg font-semibold">#PeonyGardensHotel</p>
-        </div>
-        <div className="flex justify-center my-4">
-          <img src={Travel} alt="Travel Wishlist Logo" className="h-20 w-20" />
-        </div>
-        <div className="bg-gray-800 text-center text-white py-2">
-          <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
+          <div className="flex justify-center my-4">
+            <img
+              src={Travel}
+              alt="Travel Wishlist Logo"
+              className="h-20 w-20"
+            />
+          </div>
+          <div className="bg-gray-800 text-center text-white py-2">
+            <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>
   );
-}export default Home;
+}
+
+export default Home;
