@@ -1,37 +1,59 @@
-import React, { useState } from 'react';
-import { FaInstagram, FaFacebookSquare, FaLinkedin, FaTwitter, FaWhatsappSquare } from 'react-icons/fa';
+import React, { useState } from "react";
+import {
+  FaInstagram,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaTwitter,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 
 function Contact() {
-  const [clientEmail, setClientEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [clientEmail, setClientEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Client Email:', clientEmail);
-    console.log('Message:', message);
-    alert('Message sent successfully!');
+    console.log("Client Email:", clientEmail);
+    console.log("Message:", message);
+    alert("Message sent successfully!");
   };
 
   return (
     <div className="flex flex-col items-center justify-center p-8 bg-gray-100 min-h-screen">
       <h2 className="font-bold text-4xl text-yellow-500 mb-6">Contact Us</h2>
       <div className="flex flex-col lg:flex-row lg:space-x-8 max-w-5xl w-full bg-yellow-700 bg-opacity-55 shadow-md rounded-md p-6">
-
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 bg-gray-100">
           <h3 className="font-semibold text-xl mb-4">Peony Gardens </h3>
           <p>Peony Gardens Hotel, Hospital Road, Mauko, Busia</p>
           <p>P.O. Box 1021 50400 Busia.</p>
-          <p>Email: <a href="mailto:info@peonygardens.co.ke" className="text-yellow-600">info@thelastvillage.co.ke</a></p>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:info@peonygardens.co.ke"
+              className="text-yellow-600"
+            >
+              info@thelastvillage.co.ke
+            </a>
+          </p>
           <p className="mt-4">
-            <strong>Reservation Number :</strong> +254 700 949 004<br />
+            <strong>Reservation Number :</strong> +254 700 949 004
+            <br />
             <strong>Sales Manager:</strong> +254 700 949 000
           </p>
         </div>
 
         <div className="w-full lg:w-1/2">
-          <form onSubmit={handleSubmit}>
+          <form
+            onSubmit={handleSubmit}
+            action="https://getform.io/f/zbxdrvzb"
+            method="POST"
+            className="flex flex-col w-full md:w-1/2"
+          >
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="clientName">
+              <label
+                className="block text-gray-700 font-bold mb-2"
+                htmlFor="clientName"
+              >
                 Name *
               </label>
               <input
@@ -44,7 +66,10 @@ function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="clientEmail">
+              <label
+                className="block text-gray-700 font-bold mb-2"
+                htmlFor="clientEmail"
+              >
                 Email Address *
               </label>
               <input
@@ -59,7 +84,10 @@ function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="phoneNumber">
+              <label
+                className="block text-gray-700 font-bold mb-2"
+                htmlFor="phoneNumber"
+              >
                 Telephone / Mobile Number
               </label>
               <input
@@ -71,7 +99,10 @@ function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="subject">
+              <label
+                className="block text-gray-700 font-bold mb-2"
+                htmlFor="subject"
+              >
                 Subject / Title *
               </label>
               <input
@@ -84,7 +115,10 @@ function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
+              <label
+                className="block text-gray-700 font-bold mb-2"
+                htmlFor="message"
+              >
                 Message or Enquiry *
               </label>
               <textarea
@@ -121,19 +155,39 @@ function Contact() {
       </div>
 
       <div className="flex justify-center items-center space-x-4 mb-6 mt-6">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTwitter className="text-3xl text-gray-800 hover:text-blue-500" />
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram className="text-3xl text-gray-800 hover:text-pink-600" />
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin className="text-3xl text-gray-800 hover:text-blue-500" />
         </a>
-        <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.whatsapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaWhatsappSquare className="text-3xl text-gray-800 hover:text-green-600" />
         </a>
       </div>
