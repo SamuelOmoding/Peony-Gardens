@@ -15,9 +15,9 @@ function Contact() {
   return (
     <div className="flex flex-col items-center justify-center p-8 bg-gray-100 min-h-screen">
       <h2 className="font-bold text-4xl text-yellow-500 mb-6">Contact Us</h2>
-      <div className="flex flex-col lg:flex-row lg:space-x-8 max-w-5xl w-full bg-white shadow-md rounded-md p-6">
+      <div className="flex flex-col lg:flex-row lg:space-x-8 max-w-5xl w-full bg-yellow-700 bg-opacity-55 shadow-md rounded-md p-6">
 
-        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0 bg-gray-100">
           <h3 className="font-semibold text-xl mb-4">Peony Gardens </h3>
           <p>Peony Gardens Hotel, Hospital Road, Mauko, Busia</p>
           <p>P.O. Box 1021 50400 Busia.</p>
@@ -100,7 +100,7 @@ function Contact() {
 
             <button
               type="submit"
-              className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 w-full"
+              className="bg-orange-900 text-white py-2 px-4 rounded-lg hover:bg-green-700 w-full"
             >
               Submit
             </button>
