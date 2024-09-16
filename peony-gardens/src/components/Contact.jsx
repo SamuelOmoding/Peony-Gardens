@@ -32,7 +32,7 @@ function Contact() {
               href="mailto:info@peonygardens.co.ke"
               className="text-yellow-600"
             >
-              info@thelastvillage.co.ke
+              info@peonygardens.co.ke
             </a>
           </p>
           <p className="mt-4">
