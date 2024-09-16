@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaInstagram, FaFacebookSquare, FaLinkedin, FaTwitter, FaWhatsappSquare } from 'react-icons/fa';
-import Graduation from '../assets/Graduation.jpeg';
+import MyGraduation from '../assets/Grad.jpeg';
 import Graduate from '../assets/graduation.jpeg'; 
-import Birthday from '../assets/Birthday.jpeg';
+import Birthday from '../assets/Bd.jpeg';
 import birthday from '../assets/birthday.jpeg';
 import Baby from '../assets/babyshower.jpeg';
 import Babyshower from '../assets/bbshower.jpeg';
@@ -25,7 +25,7 @@ function DealsOffers() {
       <div className="flex flex-cols-1 md:flex-cols-2 lg:flex-cols-2 gap-8 justify-center items-center mx-auto">
         <div className="relative group flex justify-center items-center space-x-10 space-y-12">
           <img
-            src={Graduation}
+            src={MyGraduation}
             alt="Graduation Event"
             className="w-52 h-58 object-cover rounded-md"
           />
