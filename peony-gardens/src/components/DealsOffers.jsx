@@ -7,6 +7,7 @@ import birthday from '../assets/birthday.jpeg';
 import Baby from '../assets/babyshower.jpeg';
 import Babyshower from '../assets/bbshower.jpeg';
 import Conference from '../assets/conference.jpeg';
+import Travel from "../assets/travel.png";
 
 function DealsOffers() {
   return (
@@ -83,7 +84,7 @@ function DealsOffers() {
         </div>
         </div>
 
-          <div className="flex justify-center items-center space-x-10 mb-20 mt-6">
+        <div className="flex justify-center items-center space-x-4 mb-6 mt-6">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
         </a>
@@ -101,10 +102,16 @@ function DealsOffers() {
         </a>
       </div>
 
-      <div className="text-center mb-8">
+      <div className="text-center mb-2">
         <p className="text-lg font-semibold">#PeonyGardensHotel</p>
       </div>
-
+      <div className="flex justify-center">
+            <img
+              src={Travel}
+              alt="Travel Wishlist Logo"
+              className="h-20 w-20"
+            />
+          </div>
       <div className="bg-gray-800 text-center text-white py-2 w-full">
         <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
       </div>

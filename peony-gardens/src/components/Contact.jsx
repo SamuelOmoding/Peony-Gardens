@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Travel from "../assets/travel.png";
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -195,6 +196,13 @@ function Contact() {
       <div className="text-center mb-4">
         <p className="text-lg font-semibold">#PeonyGardensHotel</p>
       </div>
+      <div className="flex justify-center">
+            <img
+              src={Travel}
+              alt="Travel Wishlist Logo"
+              className="h-20 w-20"
+            />
+          </div>
 
       <div className="bg-gray-800 text-center text-white py-2 w-full">
         <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
