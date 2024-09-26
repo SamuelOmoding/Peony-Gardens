@@ -6,6 +6,10 @@ import QuadBike3 from '../assets/QB1.jpeg';
 import QuadBike4 from '../assets/QB4.jpeg';
 import QuadBike5 from '../assets/QB5.jpeg';
 import QuadBike6 from '../assets/QB6.jpeg';
+import QuadBike7 from '../assets/buggy.jpg';
+import QuadBike8 from '../assets/Quds.jpg';
+import QuadBike9 from '../assets/quads.jpg';
+
 import Buggy from '../assets/BUGGY1.jpeg';
 import Travel from "../assets/travel.png";
 
@@ -29,8 +33,8 @@ function QuadBikes() {
         }}
         className="p-6"
       >
-        <h1 className="text-4xl font-bold text-orange-700 text-center mb-4">Quad Bikes</h1>
         <div className="bg-gray-900 bg-opacity-40 rounded p-8">
+        <h1 className="text-4xl font-bold text-white text-center mb-4">Quad Bikes</h1>
           <p className="text-lg text-white mb-8">
             Experience the adrenaline-inducing thrill-ride of a quad bike ride at The Last Village's expansive grounds. Your experience includes the use of a perfectly-sized 4x4 quad bike with a helmet for safety and goggles, a rugged course, and will be perfect for anyone from first-time bikers to the most audacious of adventure seekers.
           </p>
@@ -41,45 +45,66 @@ function QuadBikes() {
       </div>
 
       <div className="p-6">
-        <div className="flex flex-wrap gap-4 mb-6 justify-center hover:">
-          <div className="w-1/2 max-w-sm">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mb-6 justify-center">          
+      <div className="max-w-full">
             <img
               src={QuadBike6}
               alt="Quad Bike"
               className="w-full h-auto rounded shadow-lg"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
             <img
               src={QuadBike2}
               alt="Quad Bike"
               className="w-full h-auto rounded shadow-lg"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
             <img
-              src={QuadBike3}
+              src={QuadBike8}
               alt="Quad Bike"
               className="w-full h-auto rounded shadow-lg"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
             <img
               src={QuadBike4}
               alt="Quad Bike"
               className="w-full h-auto rounded shadow-lg"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
             <img
               src={QuadBike5}
               alt="Quad Bike"
               className="w-full h-auto rounded shadow-lg"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
             <img
               src={QuadBike1}
+              alt="Quad Bike"
+              className="w-full h-auto rounded shadow-lg"
+            />
+          </div>
+          <div className="max-w-full">
+            <img
+              src={QuadBike7}
+              alt="Quad Bike"
+              className="w-full h-auto rounded shadow-lg"
+            />
+          </div>
+          <div className="max-w-full">
+            <img
+              src={QuadBike3}
+              alt="Quad Bike"
+              className="w-full h-auto rounded shadow-lg"
+            />
+          </div>
+          <div className="max-w-full">
+            <img
+              src={QuadBike9}
               alt="Quad Bike"
               className="w-full h-auto rounded shadow-lg"
             />

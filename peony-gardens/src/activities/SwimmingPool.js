@@ -29,8 +29,8 @@
             }}
             className="p-6"
           >
-            <h1 className="text-4xl font-bold text-orange-700 text-center mb-4">Swimming Pools</h1>
             <div className="bg-gray-900 bg-opacity-40 rounded p-8">
+            <h1 className="text-4xl font-bold text-white text-center mb-4">Swimming Pools</h1>
               <p className="text-lg text-white mb-8">
               Perfect for leisure, keeping fit and having a playful day with your kids friends and families. Everyone loves a dip on a hot day to cool off the mid day heat while getting entertained.              </p>
               <p className="text-lg text-white mb-6">
