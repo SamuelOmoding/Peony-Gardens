@@ -1,22 +1,20 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
-import Team from "../assets/Team.jpeg";
-import Travel from "../assets/travel.jpeg";
-import Team1 from '../assets/Team1.jpeg';
+import Team from "../assets/TMB.JPG";
+import Travel from "../assets/travel.png";
+import Team1 from '../assets/TMB.JPG1';
 import Team2 from '../assets/Team2.jpeg';
 import Team3 from '../assets/Team3.jpeg';
 
 function TeamBuilding() {
   return (
     <div className="relative">
-      {/* Main Image */}
       <img
         src={Team}
         alt="Team Building"
         className="w-full h-screen object-cover"
       />
 
-      {/* Team Building Images Grid */}
       <div className="bg-white p-4 mt-8 mx-4 rounded-lg shadow-lg">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[Team1, Team2, Team3].map((src, index) => (
@@ -30,7 +28,6 @@ function TeamBuilding() {
         </div>
       </div>
 
-      {/* Text Block */}
       <div className="bg-white p-6 mt-8 mx-4 rounded-lg shadow-lg">
         <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center">Team Building</h1>
         <p className="text-lg text-gray-700 text-center bg-yellow-600 bg-opacity-55 p-4 rounded-lg">
@@ -40,11 +37,9 @@ function TeamBuilding() {
         </p>
       </div>
 
-      {/* Footer Section */}
 <div className="relative z-20 mt-12 bg-black py-8">
   <div className="flex justify-center items-center space-x-4 mb-2">
-    {/* Social Media Icons */}
-    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
       <FaFacebookSquare className="text-3xl text-gray-300 hover:text-blue-600" />
     </a>
     <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
@@ -69,8 +64,7 @@ function TeamBuilding() {
   <div className="bg-gray-800 text-center text-white py-2">
     <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
   </div>
-</div>
-
+  </div>
     </div>
   );
 }

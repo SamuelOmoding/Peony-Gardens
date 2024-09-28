@@ -20,47 +20,47 @@ function DoubleRoom() {
       <p className="text-lg text-gray-700 mb-6">
         The Double Room at Peony Gardens Hotel is designed to offer a comfortable and relaxing stay. This room features a double bed, perfect for couples or single travelers looking for extra space.
       </p>
-      <div className="flex flex-wrap gap-4 mb-6 justify-center">
-        <div className="w-1/2 max-w-sm">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 justify-center">
+        <div className="max-w-full">
           <img
             src={Double3}
             alt="Double Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <div className="w-1/2 max-w-sm">
+        <div className="max-w-full">
           <img
             src={Double2}
             alt="Double Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <div className="w-1/2 max-w-sm">
+        <div className="max-w-full">
           <img
             src={Double1}
             alt="Double Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <div className="w-1/2 max-w-sm">
+        <div className="max-w-full">
           <img
             src={Double4}
             alt="Double Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <div className="w-1/2 max-w-sm">
+        <div className="max-w-full">
           <img
             src={Double5}
             alt="Double Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <div className="w-1/2 max-w-sm">
+        <div className="max-w-full">
           <img
             src={Double}
             alt="Double Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>
