@@ -23,14 +23,14 @@ function FamilyRoom() {
           <img
             src={Family}
             alt="Family Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-1/2 max-w-sm">
           <img
             src={family2}
             alt="Family Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>
@@ -39,14 +39,14 @@ function FamilyRoom() {
           <img
             src={family1}
             alt="Family Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-1/2 max-w-sm">
           <img
             src={family3}
             alt="Family Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>

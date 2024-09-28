@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
 import Travel from "../assets/travel.jpeg";
-import Team from "../assets/Team.jpeg";
-import Team1 from '../assets/Team1.jpeg';
-import Team2 from '../assets/Team2.jpeg';
-import Team3 from '../assets/Team3.jpeg';
+import Team from "../assets/BAR.jpeg";
+import Team1 from '../assets/BAR.JPG';
+import Team2 from '../assets/BAR1.JPG';
+import Team3 from '../assets/BAR2.JPG';
 
 function PeonyBar() {
   return (
@@ -17,7 +17,7 @@ function PeonyBar() {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-semibold text-center px-6 ">
         <h1 className="text-4xl font-bold mb-4">Peony Bar</h1>
-        <p className="text-lg mb-2 bg-gray-900 bg-opacity-55">
+        <p className="text-lg mb-2 bg-gray-600 bg-opacity-55">
         Our bar is thoughtfully placed on the first floor to make sure you don’t miss the sunset as you take your sips from one of our premium liquors and local drinks. Don’t also miss to try out our signature cocktails creatively mixed to give you the best feeling ever from our highly skilled mixologists.        <br />
         </p>
       </div>

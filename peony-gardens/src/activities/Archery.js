@@ -1,10 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import archery from '../assets/archery.jpg';
-import archery1 from '../assets/archery1.jpg';
+import archery1 from '../assets/Archerry .jpeg';
 import ARCHERY2 from '../assets/ARCHERY2.jpg';
 import ARCHERY3 from '../assets/ARCHERY3.JPG';
 import Archer from '../assets/archery1.jpg';
+import Archery4 from '../assets/SET.jpg';
 import Travel from "../assets/travel.png";
 
 function Archery() {
@@ -27,7 +28,7 @@ function Archery() {
         }}
         className="p-6"
       >
-        <div className="bg-gray-900 bg-opacity-40 rounded p-8">
+        <div className="bg-gray-600 bg-opacity-40 rounded p-8">
         <h1 className="text-4xl font-bold text-white text-center mb-4">Archery</h1>
           <p className="text-lg text-white mb-8">
 
@@ -36,33 +37,40 @@ function Archery() {
       </div>
 
       <div className="p-6">
-        <div className="flex flex-wrap gap-4 mb-6 justify-center hover:">
-          <div className="w-1/2 max-w-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 justify-center">
+          <div className="max-w-full">
             <img
               src={archery}
               alt="Archery"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
+            <img
+              src={Archery4}
+              alt="Archery"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+          <div className="max-w-full">
             <img
               src={archery1}
               alt="Archery"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
             <img
               src={ARCHERY3}
               alt="Archery"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
-          <div className="w-1/2 max-w-sm">
+          <div className="max-w-full">
             <img
               src={ARCHERY2}
               alt="Archery"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
         
@@ -77,9 +85,9 @@ function Archery() {
       <div className="flex justify-center">
         <button
           onClick={handleViewRates}
-          className="mt-6 bg-orange-600 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
+          className="mt-6 bg-green-500 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
         >
-          View / Download Rates
+          View Rates
         </button>
       </div>
       <div className="text-center mb-4">

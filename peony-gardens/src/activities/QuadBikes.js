@@ -33,7 +33,7 @@ function QuadBikes() {
         }}
         className="p-6"
       >
-        <div className="bg-gray-900 bg-opacity-40 rounded p-8">
+        <div className="bg-gray-600 bg-opacity-40 rounded p-8">
         <h1 className="text-4xl font-bold text-white text-center mb-4">Quad Bikes</h1>
           <p className="text-lg text-white mb-8">
             Experience the adrenaline-inducing thrill-ride of a quad bike ride at The Last Village's expansive grounds. Your experience includes the use of a perfectly-sized 4x4 quad bike with a helmet for safety and goggles, a rugged course, and will be perfect for anyone from first-time bikers to the most audacious of adventure seekers.
@@ -45,68 +45,69 @@ function QuadBikes() {
       </div>
 
       <div className="p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mb-6 justify-center">          
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 justify-center">   
+    
       <div className="max-w-full">
             <img
               src={QuadBike6}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike2}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike8}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike4}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike5}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike1}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike7}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike3}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="max-w-full">
             <img
               src={QuadBike9}
               alt="Quad Bike"
-              className="w-full h-auto rounded shadow-lg"
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
         </div>
@@ -120,9 +121,9 @@ function QuadBikes() {
       <div className="flex justify-center">
         <button
           onClick={handleViewRates}
-          className="mt-6 bg-orange-600 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
+          className="mt-6 bg-green-500 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
         >
-          View / Download Rates
+          View Rates
         </button>
       </div>
       <div className="text-center mb-4">

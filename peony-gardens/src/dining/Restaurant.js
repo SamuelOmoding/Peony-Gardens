@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
 import Travel from "../assets/travel.jpeg";
-import Team from "../assets/Team.jpeg";
-import Team1 from '../assets/Team1.jpeg';
-import Team2 from '../assets/Team2.jpeg';
-import Team3 from '../assets/Team3.jpeg';
+import Team from "../assets/MAIN.JPG";
+import Team1 from '../assets/RESTO.JPG';
+import Team2 from '../assets/RESTO2.JPG';
+import Team3 from '../assets/RESTO1.JPG';
 
 function Restaurant() {
   return (
@@ -17,7 +17,7 @@ function Restaurant() {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-semibold text-center px-6 ">
         <h1 className="text-4xl font-bold mb-4">Restaurant</h1>
-        <p className="text-lg mb-2 bg-gray-900 bg-opacity-55">
+        <p className="text-lg mb-2 bg-gray-600 bg-opacity-55">
         The swahili themed restaurant comes complete with true makuti & swahili wall finishing. We start your day on a good note from either the buffet setup or an ala carte service. Breakfast will definitely impress you; it ranges from eggs, yoghurt, meat, cereals, fresh fruits and much more.
         <br />
         <br />

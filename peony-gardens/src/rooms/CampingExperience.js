@@ -16,21 +16,21 @@ function CampingExperience() {
           <img
             src={Camp}
             alt="Camping Experience"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-full md:w-1/2">
           <img
             src={Camp2}
             alt="Camping Experience"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="mb-6">
         <img
           src={Camp1}
           alt="Camping Experience"
-          className="w-full h-auto rounded shadow-lg"
+          className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
         />
       </div>
       </div>

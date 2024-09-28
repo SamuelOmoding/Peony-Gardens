@@ -26,7 +26,7 @@ function HoneymoonRoom() {
         <img
           src={ Honeymoon5 }
           alt="Honeymoon Room"
-          className="w-full h-auto rounded shadow-lg"
+          className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
         />
       </div>
         
@@ -34,7 +34,7 @@ function HoneymoonRoom() {
           <img
             src={Honeymoon2}
             alt="Honeymoon Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>
@@ -43,21 +43,21 @@ function HoneymoonRoom() {
           <img
             src={Honeymoon1}
             alt="Honeymoon Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-1/2 max-w-sm">
           <img
             src={Honeymoon3}
             alt="Honeymoon Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-1/2 max-w-sm">
           <img
             src={Honeymoon}
             alt="Honeymoon Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>

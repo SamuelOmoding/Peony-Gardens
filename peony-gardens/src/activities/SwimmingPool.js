@@ -2,10 +2,13 @@
     import { useNavigate } from 'react-router-dom';
     import Pool1 from '../assets/Pool.jpeg';
     import Pool2 from '../assets/Pool2.jpeg';
-    import Pool3 from '../assets/Pool1.jpeg';
+    import Pool3 from '../assets/pool2.jpg';
     import Pool4 from '../assets/Pool4.jpeg';
     import Pool5 from '../assets/Pool5.jpeg';
     import Pool6 from '../assets/Pool6.jpeg';
+    import Pool7 from '../assets/pool.jpg';
+    import Pool8 from '../assets/pool1.jpg';
+    import Pool9 from '../assets/Pool7.jpg';
     import Swim from '../assets/swimming.jpg';
     import Travel from "../assets/travel.png";
     
@@ -29,7 +32,7 @@
             }}
             className="p-6"
           >
-            <div className="bg-gray-900 bg-opacity-40 rounded p-8">
+            <div className="bg-gray-600 bg-opacity-40 rounded p-8">
             <h1 className="text-4xl font-bold text-white text-center mb-4">Swimming Pools</h1>
               <p className="text-lg text-white mb-8">
               Perfect for leisure, keeping fit and having a playful day with your kids friends and families. Everyone loves a dip on a hot day to cool off the mid day heat while getting entertained.              </p>
@@ -39,47 +42,73 @@
           </div>
     
           <div className="p-6">
-            <div className="flex flex-wrap gap-4 mb-6 justify-center hover:">
-              <div className="w-1/2 max-w-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 justify-center">          
+              <div className="max-w-full"
+>
                 <img
                   src={Pool6}
                   alt="Swimming Pool"
-                  className="w-full h-auto rounded shadow-lg"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="w-1/2 max-w-sm">
+              <div className="max-w-full"
+>
                 <img
                   src={Pool2}
                   alt="Swimming Pool"
-                  className="w-full h-auto rounded shadow-lg"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="w-1/2 max-w-sm">
+              <div className="max-w-full"
+>
                 <img
                   src={Pool3}
                   alt="Swimming Pool"
-                  className="w-full h-auto rounded shadow-lg"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="w-1/2 max-w-sm">
+              <div className="max-w-full"
+>
                 <img
                   src={Pool4}
                   alt="Swimming Pool"
-                  className="w-full h-auto rounded shadow-lg"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="w-1/2 max-w-sm">
+              <div className="max-w-full"
+>
                 <img
                   src={Pool5}
                   alt="Swimming Pool"
-                  className="w-full h-auto rounded shadow-lg"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="w-1/2 max-w-sm">
-                <img
+              <div className="max-w-full">
+                  <img
                   src={Pool1}
                   alt="Swimming Pool"
-                  className="w-full h-auto rounded shadow-lg"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="max-w-full">
+                  <img
+                  src={Pool7}
+                  alt="Swimming Pool"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="max-w-full">
+                  <img
+                  src={Pool8}
+                  alt="Swimming Pool"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="max-w-full">
+                  <img
+                  src={Pool9}
+                  alt="Swimming Pool"
+                  className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>
@@ -92,9 +121,9 @@
           <div className="flex justify-center">
             <button
               onClick={handleViewRates}
-              className="mt-6 bg-orange-600 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
+              className="mt-6 bg-green-500 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
             >
-              View / Download Rates
+              View Rates
             </button>
           </div>
           <div className="text-center mb-4">

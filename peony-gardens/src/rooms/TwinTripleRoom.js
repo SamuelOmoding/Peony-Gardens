@@ -22,14 +22,14 @@ function TwinTripleRoom() {
           <img
             src={Twin}
             alt="Twin Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-1/2 max-w-sm">
           <img
             src={Twin2}
             alt="Twin Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>
@@ -38,14 +38,15 @@ function TwinTripleRoom() {
           <img
             src={Twin1}
             alt="Triple Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div className="w-1/2 max-w-sm">
           <img
             src={Tripple}
             alt="Triple Room"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
+
           />
         </div>
       </div>
