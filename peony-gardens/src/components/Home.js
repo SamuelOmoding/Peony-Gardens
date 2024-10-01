@@ -58,7 +58,7 @@ function Home() {
               alt="Garden"
               className="w-full h-screen object-cover"
             />
-            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold px-6 py-2">
               Swimming Pool
             </p>
           </div>
@@ -68,7 +68,7 @@ function Home() {
               alt="Garden1"
               className="w-full h-screen object-cover"
             />
-            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold px-6 py-2">
               Relaxing Area
             </p>
           </div>
@@ -78,7 +78,7 @@ function Home() {
               alt="Garden2"
               className="w-full h-screen object-cover"
             />
-            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold px-6 py-2">
               Garden Area 2
             </p>
           </div>
@@ -88,7 +88,7 @@ function Home() {
               alt="Garden3"
               className="w-full h-screen object-cover"
             />
-            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold px-6 py-2">
               Garden Area 3
             </p>
           </div>
@@ -98,7 +98,7 @@ function Home() {
               alt="Garden4"
               className="w-full h-screen object-cover"
             />
-            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold  px-6 py-2">
+            <p className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold px-6 py-2">
               Photo Area
             </p>
           </div>
@@ -351,23 +351,8 @@ function Home() {
             <Activityslider />
           </div>
         </div>
-        {/* Activities Slider */}
-        {/* <button className="bg-gray-200 rounded-full p-2">{"<"}</button>
-          <div className="w-full p-4">
-            <p className="text-gray-700">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-          <div className="w-full p-4">
-            <p className="text-gray-700">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
-          </div>
-          <button className="bg-gray-200 rounded-full p-2">{">"}</button>
-        </div>
-      </div> */}
 
-        {/* Location Section */}
+        {/* Location and Footer Section */}
         <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-8">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-semibold">WHERE TO FIND US</h2>
@@ -394,58 +379,59 @@ function Home() {
               <p>reservations@peonygardens.co.ke</p>
             </div>
           </div>
-        </div>
-        {/* Footer Section */}
-        <div className="relative z-20 mt-12 bg-gray-50 py-8">
-          <div className="flex justify-center items-center space-x-4 mb-2">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
-            </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="text-3xl text-gray-800 hover:text-black" />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="text-3xl text-gray-800 hover:text-pink-700" />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="text-3xl text-gray-800 hover:text-blue-500" />
-            </a>
-            <a
-              href="https://www.whatsapp.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsappSquare className="text-3xl text-gray-800 hover:text-green-600" />
-            </a>
-          </div>
-          <div className="text-center">
-            <p className="text-lg font-semibold">#PeonyGardensHotel</p>
-          </div>
-          <div className="flex justify-center my-4">
-            <img
-              src={Travel}
-              alt="Travel Wishlist Logo"
-              className="h-20 w-20"
-            />
-          </div>
-          <div className="bg-gray-800 text-center text-white py-2">
-            <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
+
+          {/* Footer Section */}
+          <div className="relative z-20 mt-12 bg-gray-50 py-8">
+            <div className="flex justify-center items-center space-x-4 mb-2">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="text-3xl text-gray-800 hover:text-black" />
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="text-3xl text-gray-800 hover:text-pink-700" />
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-3xl text-gray-800 hover:text-blue-500" />
+              </a>
+              <a
+                href="https://www.whatsapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsappSquare className="text-3xl text-gray-800 hover:text-green-600" />
+              </a>
+            </div>
+            <div className="text-center">
+              <p className="text-lg font-semibold">#PeonyGardensHotel</p>
+            </div>
+            <div className="flex justify-center my-4">
+              <img
+                src={Travel}
+                alt="Travel Wishlist Logo"
+                className="h-20 w-20"
+              />
+            </div>
+            <div className="bg-gray-800 text-center text-white py-2">
+              <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>
