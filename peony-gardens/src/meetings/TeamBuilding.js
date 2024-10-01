@@ -37,7 +37,7 @@ function TeamBuilding() {
         </p>
       </div>
 
-<div className="relative z-20 mt-12 bg-black py-8">
+<div className="relative z-20 mt-12 bg-gray-800 py-8">
   <div className="flex justify-center items-center space-x-4 mb-2">
   <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
       <FaFacebookSquare className="text-3xl text-gray-300 hover:text-blue-600" />

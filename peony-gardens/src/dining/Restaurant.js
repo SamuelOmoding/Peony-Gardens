@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
 import Travel from "../assets/travel.png";
-import Team from "../assets/MAIN.JPG";
+import Team from "../assets/BALACONA.jpeg";
 import Team1 from '../assets/RESTO.JPG';
 import Team2 from '../assets/RESTO2.JPG';
 import Team3 from '../assets/RESTO1.JPG';
@@ -32,14 +32,14 @@ function Restaurant() {
             <img 
               key={index}
               src={src} 
-              alt={`Restaurant Image ${index + 1}`} 
+              alt={`Restaurant ${index + 1}`} 
               className="rounded-lg w-full h-56 object-cover transition-transform duration-300 hover:scale-105" 
             />
           ))}
         </div>
       </div>
 
-      <div className="relative z-20 mt-12 bg-black py-8">
+      <div className="relative z-20 mt-12 bg-gray-800 py-8">
         <div className="flex justify-center items-center space-x-4 mb-2">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebookSquare className="text-3xl text-gray-300 hover:text-blue-600" />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
 import Pool1 from '../assets/Pool.jpeg';
 import Pool2 from '../assets/Pool2.jpeg';
 import Pool3 from '../assets/pool2.jpg';
@@ -17,8 +18,8 @@ const SwimmingPool = () => {
 
   const BUTTON_BG_COLOR = 'bg-green-500';
   const BUTTON_HOVER_COLOR = 'bg-orange-900';
-  const TEXT_COLOR = 'text-black';
-  const FOOTER_BG_COLOR = 'bg-gray-800';
+  // const TEXT_COLOR = 'text-black';
+  // const FOOTER_BG_COLOR = 'bg-gray-800';
   const FOOTER_TEXT_COLOR = 'text-white';
 
   const handleViewRates = () => {
@@ -68,19 +69,33 @@ const SwimmingPool = () => {
         </button>
       </div>
 
-      <div className="text-center mb-4">
-        <p className="text-lg font-semibold">#PeonyGardensHotel</p>
-      </div>
-      <div className="flex justify-center">
-        <img
-          src={Travel}
-          alt="Travel Wishlist Logo"
-          className="h-20 w-20"
-        />
-      </div>
-
-      <div className={`${FOOTER_BG_COLOR} text-center ${FOOTER_TEXT_COLOR} py-2 w-full`}>
-        <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
+      <div className="relative z-20 mt-12 bg-gray-800 py-8">
+        <div className="flex justify-center items-center space-x-4 mb-2">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookSquare className="text-3xl text-gray-300 hover:text-blue-600" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="text-3xl text-gray-300 hover:text-black" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-3xl text-gray-300 hover:text-pink-700" />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-3xl text-gray-300 hover:text-blue-500" />
+          </a>
+          <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+            <FaWhatsappSquare className="text-3xl text-gray-300 hover:text-green-600" />
+          </a>
+        </div>
+        <div className="text-center">
+          <p className="text-lg font-semibold text-gray-300">#PeonyGardensHotel</p>
+        </div>
+        <div className="flex justify-center my-4">
+          <img src={Travel} alt="Travel Wishlist Logo" className="h-20 w-20" />
+        </div>
+        <div className="bg-gray-800 text-center text-white py-2">
+          <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
+        </div>
       </div>
     </div>
   );
