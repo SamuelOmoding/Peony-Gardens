@@ -9,14 +9,12 @@ import Wed4 from '../assets/wed4.jpeg';
 function WeddingsEvents() {
   return (
     <div className="relative">
-      {/* Main Image */}
       <img
         src={Wed4}
         alt="Weddings & Events"
         className="w-full h-screen object-cover"
       />
 
-      {/* Wedding & Event Images Grid */}
       <div className="bg-white p-4 mt-8 mx-4 rounded-lg shadow-lg">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[Wed1, Wed2, Wed3].map((src, index) => (
@@ -30,7 +28,6 @@ function WeddingsEvents() {
         </div>
       </div>
 
-      {/* Text Block */}
       <div className="bg-white p-6 mt-8 mx-4 rounded-lg shadow-lg">
         <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center">Weddings & Events</h1>
         <p className="text-lg text-gray-700 text-center bg-yellow-600 bg-opacity-55 p-4 rounded-lg">
@@ -40,9 +37,8 @@ function WeddingsEvents() {
         </p>
       </div>
 
-      <div className="relative z-20 mt-12 bg-black py-8">
+      <div className="relative z-20 mt-12 bg-gray-800 py-8">
   <div className="flex justify-center items-center space-x-4 mb-2">
-    {/* Social Media Icons */}
     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
       <FaFacebookSquare className="text-3xl text-gray-300 hover:text-blue-600" />
     </a>

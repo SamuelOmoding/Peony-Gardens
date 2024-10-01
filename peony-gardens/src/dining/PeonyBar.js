@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
-import Travel from "../assets/travel.jpeg";
+import Travel from "../assets/travel.png";
 import Team from "../assets/BAR.jpeg";
 import Team1 from '../assets/BAR.JPG';
 import Team2 from '../assets/BAR1.JPG';
@@ -28,14 +28,14 @@ function PeonyBar() {
             <img 
               key={index}
               src={src} 
-              alt={`Bar Image ${index + 1}`} 
+              alt={`Bar ${index + 1}`} 
               className="rounded-lg w-full h-56 object-cover transition-transform duration-300 hover:scale-105" 
             />
           ))}
         </div>
       </div>
 
-      <div className="relative z-20 mt-12 bg-black py-8">
+      <div className="relative z-20 mt-12 bg-gray-800 py-8">
         <div className="flex justify-center items-center space-x-4 mb-2">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebookSquare className="text-3xl text-gray-300 hover:text-blue-600" />

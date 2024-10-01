@@ -49,7 +49,6 @@ function Home() {
 
   return (
     <div id="home" className="relative min-h-screen">
-      {/* Container for Slider and Reservation */}
       <div className="relative w-full h-screen">
         <Slider {...settings} className="absolute inset-0 z-0">
           <div className="relative">
@@ -104,7 +103,6 @@ function Home() {
           </div>
         </Slider>
 
-        {/* Reservation Form at the Bottom */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30 bg-white bg-opacity-45 p-5 rounded-t-lg shadow-md w-full max-w-4xl">
           <h2 className="text-2xl text-center font-bold mb-4">
             Reserve Your Stay
@@ -120,7 +118,6 @@ function Home() {
               <input type="date" className="border p-2 rounded" />
             </div>
 
-            {/* Rooms and Guests Selection */}
             <div className="flex flex-col">
               <label className="font-bold mb-1">Rooms</label>
               <div className="flex items-center space-x-2">
@@ -169,7 +166,6 @@ function Home() {
               </div>
             </div>
 
-            {/* Promo Code and Check Availability */}
             <div className="flex flex-col items-end">
               <label className="font-bold mb-1">Have a promotion code?</label>
               <input
@@ -185,7 +181,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Welcome Section */}
       <div className="relative p-5 z-20 mt-9 bg-yellow-700 bg-opacity-55 max-h-[600px] max-w-8xl mx-auto rounded-lg">
         <h2 className="text-black text-2xl font-bold py-2">
           Welcome to Peony Gardens.
@@ -201,7 +196,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Accommodation Section */}
       <div className="relative p-5 z-20 mt-9 bg-yellow-700 bg-opacity-55 max-h-[1000px] max-w-8xl mx-auto rounded-lg text-center">
         <h2 className="text-2xl font-semibold">ACCOMMODATIONS</h2>
         <h3 className="text-3xl font-bold mb-2">
@@ -212,7 +206,6 @@ function Home() {
         </h1>
         <p className="text-lg text-black">Beautiful Spaces!</p>
 
-        {/* Accommodations Section */}
         <div className="relative z-20 mt-12 bg-gray-50 py-8">
           <div className="text-center mb-6">
             <p className="text-gray-600">
@@ -221,7 +214,6 @@ function Home() {
             </p>
           </div>
           <div className="flex justify-center space-x-6">
-            {/* Room Cards */}
             <div className="relative group bg-white p-4 shadow rounded-lg overflow-hidden">
               <img
                 src={single}
@@ -321,7 +313,6 @@ function Home() {
           </div>
         </div>
 
-        {/* Activities Section */}
         <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-10">
           <div className="text-center mb-6">
             <h2 className="text-4xl font-bold mb-10">ACTIVITIES</h2>
@@ -352,7 +343,6 @@ function Home() {
           </div>
         </div>
 
-        {/* Location and Footer Section */}
         <div className="relative z-20 mt-12 bg-yellow-700 bg-opacity-55 py-8">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-semibold">WHERE TO FIND US</h2>
@@ -380,7 +370,6 @@ function Home() {
             </div>
           </div>
 
-          {/* Footer Section */}
           <div className="relative z-20 mt-12 bg-gray-50 py-8">
             <div className="flex justify-center items-center space-x-4 mb-2">
               <a

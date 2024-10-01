@@ -84,6 +84,7 @@ function DealsOffers() {
         </div>
         </div>
 
+
         <div className="flex justify-center items-center space-x-4 mb-6 mt-6">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
