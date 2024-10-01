@@ -15,47 +15,46 @@ function PeonyBar() {
         className="w-full h-screen object-cover"
       />
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-semibold text-center px-6 ">
-        <h1 className="text-4xl font-bold mb-4">Peony Bar</h1>
-        <p className="text-lg mb-2 bg-gray-600 bg-opacity-55">
-        Our bar is thoughtfully placed on the first floor to make sure you don’t miss the sunset as you take your sips from one of our premium liquors and local drinks. Don’t also miss to try out our signature cocktails creatively mixed to give you the best feeling ever from our highly skilled mixologists.        <br />
+      <div className="bg-white p-6 mt-8 mx-4 rounded-lg shadow-lg">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center">Peony Bar</h1>
+        <p className="text-lg text-gray-700 text-center bg-yellow-600 bg-opacity-55 p-4 rounded-lg">
+          Our bar is thoughtfully placed on the first floor, ensuring you don’t miss the sunset while sipping one of our premium liquors or local drinks. Don’t miss out on our signature cocktails, creatively mixed by our highly skilled mixologists to provide you with the best experience.
         </p>
       </div>
 
-      <div className="bg-white p-2 mt-8 mx-4 rounded-lg shadow-lg">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+      <div className="bg-white p-4 mt-8 mx-4 rounded-lg shadow-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[Team1, Team2, Team3].map((src, index) => (
             <img 
               key={index}
               src={src} 
-              alt={`Conference ${index + 1}`} 
-              className="rounded-lg w-full h-56 object-cover" 
+              alt={`Bar Image ${index + 1}`} 
+              className="rounded-lg w-full h-56 object-cover transition-transform duration-300 hover:scale-105" 
             />
           ))}
         </div>
       </div>
 
-      <div className="relative z-20 mt-12 bg-gray-50 py-8">
+      <div className="relative z-20 mt-12 bg-black py-8">
         <div className="flex justify-center items-center space-x-4 mb-2">
-          {/* Social Media Icons */}
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <FaFacebookSquare className="text-3xl text-gray-800 hover:text-blue-600" />
+            <FaFacebookSquare className="text-3xl text-gray-300 hover:text-blue-600" />
           </a>
           <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="text-3xl text-gray-800 hover:text-black" />
+            <FaTwitter className="text-3xl text-gray-300 hover:text-black" />
           </a>
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-3xl text-gray-800 hover:text-pink-700" />
+            <FaInstagram className="text-3xl text-gray-300 hover:text-pink-700" />
           </a>
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-3xl text-gray-800 hover:text-blue-500" />
+            <FaLinkedin className="text-3xl text-gray-300 hover:text-blue-500" />
           </a>
           <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
-            <FaWhatsappSquare className="text-3xl text-gray-800 hover:text-green-600" />
+            <FaWhatsappSquare className="text-3xl text-gray-300 hover:text-green-600" />
           </a>
         </div>
         <div className="text-center">
-          <p className="text-lg font-semibold">#PeonyGardensHotel</p>
+          <p className="text-lg font-semibold text-gray-300">#PeonyGardensHotel</p>
         </div>
         <div className="flex justify-center my-4">
           <img src={Travel} alt="Travel Wishlist Logo" className="h-20 w-20" />
@@ -69,6 +68,3 @@ function PeonyBar() {
 }
 
 export default PeonyBar;
-
-
-

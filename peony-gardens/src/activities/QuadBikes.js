@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaWhatsappSquare, FaLinkedin, FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
 import QuadBike1 from '../assets/QB.jpeg';
 import QuadBike2 from '../assets/QB2.jpeg';
 import QuadBike3 from '../assets/QB1.jpeg';
@@ -21,104 +22,40 @@ function QuadBikes() {
   };
 
   return (
-    <div className="relative p-5">
-      <div
-        style={{ 
-          backgroundImage: `url(${Buggy})`, 
-          backgroundSize: 'cover', 
-          backgroundPosition: 'center', 
-          backgroundRepeat: 'no-repeat', 
-          height: '100vh', 
-          width: '100%' 
-        }}
-        className="p-6"
-      >
-        <div className="bg-gray-600 bg-opacity-40 rounded p-8">
-        <h1 className="text-4xl font-bold text-white text-center mb-4">Quad Bikes</h1>
-          <p className="text-lg text-white mb-8">
-            Experience the adrenaline-inducing thrill-ride of a quad bike ride at The Last Village's expansive grounds. Your experience includes the use of a perfectly-sized 4x4 quad bike with a helmet for safety and goggles, a rugged course, and will be perfect for anyone from first-time bikers to the most audacious of adventure seekers.
-          </p>
-          <p className="text-lg text-white mb-6">
-            For kids who love adventure and a bit of challenge, we have child-friendly mini quad bikes that will get your kids’ adrenaline racing. Our patient and well-experienced instructors will train them before they embark on experiencing the joy of riding off-road. One more thing, don't forget to take a picture of them riding and taking up the challenge. This is a perfect memory of them when they grow up.
-          </p>
+    <div className="relative">
+      <img
+        src={Buggy}
+        alt="Quad Bikes"
+        className="w-full h-screen object-cover"
+      />
+
+      <div className="bg-white p-6 mt-8 mx-4 rounded-lg shadow-lg">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center">Quad Bikes</h1>
+        <p className="text-lg text-gray-700 text-center bg-yellow-600 bg-opacity-55 p-4 rounded-lg">
+          Experience the adrenaline-inducing thrill of a quad bike ride at The Last Village's expansive grounds. Your experience includes the use of a perfectly-sized 4x4 quad bike, with safety equipment provided. It’s ideal for both beginners and adventure seekers alike.
+          <br /><br />
+          For kids, we have mini quad bikes, with experienced instructors to guide them before they embark on the adventure. It’s a perfect way to create lasting memories.
+        </p>
+      </div>
+
+      <div className="bg-white p-4 mt-8 mx-4 rounded-lg shadow-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {[QuadBike6, QuadBike2, QuadBike8, QuadBike4, QuadBike5, QuadBike1, QuadBike7, QuadBike3, QuadBike9].map((src, index) => (
+            <img 
+              key={index}
+              src={src} 
+              alt={`Quad Bike ${index + 1}`} 
+              className="rounded-lg w-full h-56 object-cover transition-transform duration-300 hover:scale-105" 
+            />
+          ))}
         </div>
       </div>
 
-      <div className="p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 justify-center">   
-    
-      <div className="max-w-full">
-            <img
-              src={QuadBike6}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike2}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike8}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike4}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike5}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike1}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike7}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike3}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div className="max-w-full">
-            <img
-              src={QuadBike9}
-              alt="Quad Bike"
-              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-        </div>
-      </div>
-<div>
-      <h2 className="text-2xl font-bold text-black mb-4 text-center">Book Your Ride</h2>
-      <p className="text-lg text-black mb-6 text-center">
-        To book your Quad Bike experience, please contact us at reservations@peonygardens.co.ke or call us at +254 700 949 004.
-      </p>
-      </div>
-      <div className="flex justify-center">
+      <div className="bg-white p-6 mt-8 mx-4 rounded-lg shadow-lg text-center">
+        <h2 className="text-2xl font-bold text-black mb-4">Book Your Ride</h2>
+        <p className="text-lg text-black mb-6 leading-relaxed tracking-wide px-4 py-2 bg-gray-100 rounded-lg">
+          To book your Quad Bike experience, please contact us at reservations@peonygardens.co.ke or call us at +254 700 949 004.
+        </p>
         <button
           onClick={handleViewRates}
           className="mt-6 bg-green-500 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
@@ -126,21 +63,20 @@ function QuadBikes() {
           View Rates
         </button>
       </div>
+
       <div className="text-center mb-4">
         <p className="text-lg font-semibold">#PeonyGardensHotel</p>
       </div>
       <div className="flex justify-center">
-            <img
-              src={Travel}
-              alt="Travel Wishlist Logo"
-              className="h-20 w-20"
-            />
-          </div>
-
+        <img
+          src={Travel}
+          alt="Travel Wishlist Logo"
+          className="h-20 w-20"
+        />
+      </div>
       <div className="bg-gray-800 text-center text-white py-2 w-full">
         <p>© Copyright 2024. Peony Gardens. All rights reserved.</p>
       </div>
-
     </div>
   );
 }
