@@ -37,7 +37,7 @@ function Archery() {
               key={index}
               src={src}
               alt={`Archery ${index + 1}`}
-              className="rounded-lg w-full h-56 object-cover transition-transform duration-300 hover:scale-105"
+              className="rounded-lg w-full h-80 object-cover transition-transform duration-300 hover:scale-105"
             />
           ))}
         </div>
