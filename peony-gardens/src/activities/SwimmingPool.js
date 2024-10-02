@@ -57,7 +57,7 @@ const SwimmingPool = () => {
       </div>
 
       <div className="bg-white p-6 mt-8 mx-4 rounded-lg shadow-lg text-center">
-        <h2 className="text-2xl font-bold text-black mb-4">Book Your Ride</h2>
+        <h2 className="text-2xl font-bold text-black mb-4">Let's Go Swimming</h2>
         <p className="text-lg text-black mb-6 leading-relaxed tracking-wide px-4 py-2 bg-gray-100 rounded-lg">
           Perfect for leisure, keeping fit, and having a playful day with your kids, friends, and families. Everyone loves a dip on a hot day to cool off the mid-day heat while getting entertained.
         </p>

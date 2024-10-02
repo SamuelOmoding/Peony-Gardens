@@ -45,7 +45,7 @@ function Archery() {
       </div>
 
       <div className="bg-white p-6 mt-8 mx-4 rounded-lg shadow-lg text-center">
-        <h2 className="text-2xl font-bold text-black mb-4">Book Your Ride</h2>
+        <h2 className="text-2xl font-bold text-black mb-4">Be the Archer</h2>
         <p className="text-lg text-black mb-6 leading-relaxed tracking-wide px-4 py-2 bg-gray-100 rounded-lg">
           To book your Archery experience, please contact us at reservations@peonygardens.co.ke or call us at +254 700 949 004.
         </p>
