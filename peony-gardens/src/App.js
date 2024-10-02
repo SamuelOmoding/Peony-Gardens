@@ -24,8 +24,7 @@ import QuadBikes from './activities/QuadBikes';
 import SwimmingPool from './activities/SwimmingPool'; 
 import Archery from './activities/Archery';
 import ZipLining from './activities/ZipLining'; 
-
-
+import KidsPlayground from './activities/KidsPlayground';
 
 function App() {
   return (
@@ -53,6 +52,7 @@ function App() {
           <Route path="/activities-experience/swimming-pool" element={<SwimmingPool />} /> 
           <Route path="/activities-experience/archery" element={<Archery />} /> 
           <Route path="/activities-experience/zip-lining-high-ropes" element={<ZipLining />} /> 
+          <Route path="/activities-experience/kids-playground" element={<KidsPlayground />} /> 
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/rates" element={<Rates />} /> 
