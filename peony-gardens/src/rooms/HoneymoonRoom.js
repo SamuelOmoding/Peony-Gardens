@@ -83,7 +83,7 @@ function HoneymoonRoom() {
         onClick={handleViewRates}
         className="mt-6 bg-orange-600 text-white py-2 px-4 rounded hover:bg-orange-900 transition duration-300"
       >
-        View / Download Rates
+        View Rates
       </button>
     </div>
   );
