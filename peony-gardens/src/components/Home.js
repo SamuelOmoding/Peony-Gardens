@@ -27,12 +27,24 @@ import honeymoon from "../assets/honeymoon.jpeg";
 function Home() {
   const [rooms, setRooms] = useState(1);
   const [guests, setGuests] = useState(1);
-
+  const [checkIn, setCheckIn] = useState("");
+  const [checkOut, setCheckOut] = useState("");
+  const [promoCode, setPromoCode] = useState("");
+  
   const incrementRooms = () => setRooms(rooms + 1);
   const decrementRooms = () => setRooms(rooms > 1 ? rooms - 1 : 1);
 
   const incrementGuests = () => setGuests(guests + 1);
   const decrementGuests = () => setGuests(guests > 1 ? guests - 1 : 1);
+
+  const handleCheckAvailability = () => {
+    const formattedCheckIn = checkIn.split("-").reverse().join("-");
+    const formattedCheckOut = checkOut.split("-").reverse().join("-");
+    
+    const availabilityUrl = `https://thelastvillage.reserveport.com/accommodation/room-selection?limitstart=0&limit=10&residency=resident&min_checkin_date=&checkin_date=${formattedCheckIn}&checkout_date=${formattedCheckOut}&adults=${guests}&rooms=${rooms}&coupon_code=${promoCode}`;
+  
+    window.open(availabilityUrl, "_blank"); 
+  };
 
   const settings = {
     dots: true,
@@ -171,16 +183,20 @@ function Home() {
               <input
                 type="text"
                 placeholder="Enter promo code"
+                value={promoCode}
+                onChange={(e) => setPromoCode(e.target.value)}
                 className="border p-2 rounded mb-2"
               />
-              <button className="bg-orange-600 text-white py-2 px-4 rounded">
+              <button
+                onClick={handleCheckAvailability}
+                className="bg-orange-600 text-white py-2 px-4 rounded"
+              >
                 Check Availability
               </button>
             </div>
           </div>
         </div>
       </div>
-
       <div className="relative p-5 z-20 mt-9 bg-yellow-700 bg-opacity-55 max-h-[600px] max-w-8xl mx-auto rounded-lg">
         <h2 className="text-black text-2xl font-bold py-2">
           Welcome to Peony Gardens.
